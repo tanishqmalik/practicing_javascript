@@ -1,0 +1,9 @@
+div > div{
+    margin-left: .5rem;
+    padding-left: .25rem;
+    border-left: 1px solid #777;
+}
+
+div{
+    color:black
+}
