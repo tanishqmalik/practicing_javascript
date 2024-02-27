@@ -1,0 +1,8 @@
+#imagecontainer{
+    position: relative;
+    width:10px;
+}
+
+#img1{
+    position: absolute;
+}
