@@ -21,3 +21,4 @@ imagecontainer.addEventListener("mouseleave", ()=>{
     imagetwo.style.display="none"
     imgageone.style.display="inline-block"
 })
+
