@@ -1,16 +1,26 @@
-const limain= document.getElementById('limain')
-const li1= document.getElementById('li1')
-
-const options = document.getElementById('options')
-
-const checkboxes = document.querySelectorAll('#myCheckbox')
+const form_ele = document.getElementById('quiz-form')
+const answer_input= Array.from(document.querySelectorAll('.answer'))
+// const ques_items= document.querySelectorAll('.question-item')
+const alert= document.getElementById('alert')
 
 
-checkboxes.forEach(e=>{
-    e.addEventListener('change', ()=>{
-        if(this.checked){
-            checkboxes.forEach(e=>e.checked=false);
-            this.checked=true;
+form_ele.addEventListener('submit', e=>{
+    e.preventDefault()
+    const checkedAnswers=answer_input.filter(answer_input => answer_input.checked)
+    
+    checkedAnswers.forEach(answer_input=>{
+        const isCorrect = answer_input.value==="true"
+        const questionItem= answer_input.closest('.question-item')
+
+        if(isCorrect){
+            questionItem.classList.add("correct")
         }
+
+        else{
+            questionItem.classList.add("incorrect");
+            questionItem.classList.remove("correct")
+        }
+
+        console.log(questionItem)
     })
 })

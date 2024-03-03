@@ -4,83 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet"> 
 </head>
 <body>
-
-    <div class="main">
-        <ol id="limain">
-            <li class="li1">tanishqvideo subs??</li>
-            <ol type="a">
-
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">100</label>
-                </li>
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">200</label>
-                </li>
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">500</label>
-                </li>
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">700+</label>
-                </li>
-            </ol>
-
-
-            <li class="li1">yt channel started??</li>
-
-
-            <ol type="a">
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox"></label>2019
-                </li>
-
-                <li class="options">                 
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">2020</label>
-                </li>
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">2022</label>
-                </li>
-                <li class="options">                    
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">1987</label>
-                </li>
-            </ol>
-
-            <li class="li1">yt channel views??</li>
-
-            <ol type="a">
-                <li class="options">                    
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">1lakh</label>
-                </li>
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">2lakh</label>
-                </li>
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">50thousand</label>
-                </li>
-                <li class="options">
-                    <input type="checkbox" id="myCheckbox" >
-                    <label for="myCheckbox">3lakh+</label>
-                </li>
-            </ol>
-        </ol>
-
-        <button id="button">
-            check
-        </button>
+    <div id="alert">
+        <div class="alert-title">Congratulations!!</div>
+        You got them right !
     </div>
+    
+    <form id="quiz-form">
+        <ol>
+            <li class="question-item">
+
+                <div>When tanishqvideo started ?</div>
+
+                <ol type="a">
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-1" value="true"> 
+                            <code>2020</code>
+                        </label>
+
+                    </li>
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-1" value="false"> 
+                            <code>2021</code>
+                        </label>
+
+                    </li>
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-1" value="false"> 
+                            <code>2022</code>
+                        </label>
+
+                    </li>
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-1" value="false"> 
+                            <code>1987</code>
+                        </label>
+
+                    </li>
+
+
+
+
+                </ol>
+
+            </li>
+
+
+
+            <li class="question-item">
+
+                <div>tanishqvideo subs ??</div>
+
+                <ol type="a">
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-2" value="false">
+                            <code>100</code>
+                        </label>
+
+                    </li>
+
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-2" value="false">
+                            <code>200</code>
+                        </label>
+
+                    </li>
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-2" value="false">
+                            <code>300</code>
+                        </label>
+
+                    </li>
+
+
+                    <li class="answer-item">
+
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-2" value="true">
+                            <code>500+</code>
+                        </label>
+
+                    </li>
+
+                </ol>
+
+            </li>
+
+
+            <li class="question-item">
+                <div>tanishqvideo views??</div>
+
+                <ol  type="a">
+
+                    <li class="answer-item">
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-3" value="false"> 
+                            <code>1lakh</code>
+                        </label>
+                     </li>
+
+                     <li class="answer-item">
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-3" value="false"> 
+                            <code>1lakh</code>
+                        </label>
+                     </li>
+
+
+
+                     <li class="answer-item">
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-3" value="false"> 
+                            <code>50thousand</code>
+                        </label>
+                     </li>
+
+                     <li class="answer-item">
+                        <label>
+                            <input class="answer" type="radio"
+                            name="answer-3" value="true"> 
+                            <code>3lakh +</code>
+                        </label>
+                     </li>
+
+                </ol>
+            </li>
+        </ol>
+        <button type="submit">Check</button>
+    </form>
+
     <script src="script.js"></script>
 </body>
 </html>

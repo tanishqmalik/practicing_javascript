@@ -1,6 +1,10 @@
-.li1{
-    font-size: 30px;
+.question-item.correct{
+    color:green;
 }
-.options{
-    font-size:20px;
+.question-item.incorrect{
+    color:red
+}
+
+#alert{
+    display: none;
 }
