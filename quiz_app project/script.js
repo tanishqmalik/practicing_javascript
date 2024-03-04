@@ -1,7 +1,7 @@
 const form_ele = document.getElementById('quiz-form')
 const answer_input= Array.from(document.querySelectorAll('.answer'))
 // const ques_items= document.querySelectorAll('.question-item')
-const alert= document.getElementById('alert')
+const alertone= document.querySelector('#alert')
 
 
 form_ele.addEventListener('submit', e=>{
@@ -14,6 +14,7 @@ form_ele.addEventListener('submit', e=>{
 
         if(isCorrect){
             questionItem.classList.add("correct")
+            // alertone.classList.add('open')
         }
 
         else{
@@ -21,6 +22,46 @@ form_ele.addEventListener('submit', e=>{
             questionItem.classList.remove("correct")
         }
 
-        console.log(questionItem)
+        // console.log(isCorrect)
+        // const truevalues = questionItem.isCorrect
+        // console.log(truevalues)
+
+
+
+        // form_ele.addEventListener('submit', e=>{
+        //     e.preventDefault()
+        //     if(correctAnswers){
+        //         alertone.classList.add('open')
+        //     }
+        // })
     })
+
+
+
+    // const correctAnswers = questionItem => questionItem.isCorrect;
+
+    // form_ele.addEventListener('submit',e=>{
+    //     e.preventDefault()
+    //     const correctAnswers = document.querySelectorAll('.correct')
+    //     if(correctAnswers.isCorrect){
+    //         alertone.classList.add('open')
+    //     }
+    //     // alertone.classList.add('open')
+    //     console.log(alertone)
+    
+    // })
+
+    const correctAnswers= Array.from(document.querySelectorAll('.correct'))
+    console.log(correctAnswers)
+
+    if(correctAnswers){
+        alertone.classList.add('open')
+    }
+    console.log(alertone)
+
+
+    
 })
+
+
+
