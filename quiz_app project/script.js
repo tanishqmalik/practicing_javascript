@@ -7,6 +7,8 @@ const alertone= document.querySelector('#alert')
 form_ele.addEventListener('submit', e=>{
     e.preventDefault()
     const checkedAnswers=answer_input.filter(answer_input => answer_input.checked)
+
+    let allcorrect= true;
     
     checkedAnswers.forEach(answer_input=>{
         const isCorrect = answer_input.value==="true"
@@ -20,7 +22,29 @@ form_ele.addEventListener('submit', e=>{
         else{
             questionItem.classList.add("incorrect");
             questionItem.classList.remove("correct")
+            allcorrect=false;
         }
+
+
+        // const correctAnswers= Array.from(document.querySelectorAll('.correct'))
+        // console.log(correctAnswers)
+        
+        
+        // correctAnswers.forEach(questionItem=>{
+        //     if(questionItem.isCorrect){
+        //         alertone.classList.add('open')
+        //     }
+        //     console.log(alertone)
+        // })
+
+
+        if(allcorrect){
+            alertone.classList.add('open')
+        }
+        else{
+            
+        }
+    })
 
         // console.log(isCorrect)
         // const truevalues = questionItem.isCorrect
@@ -34,7 +58,9 @@ form_ele.addEventListener('submit', e=>{
         //         alertone.classList.add('open')
         //     }
         // })
-    })
+
+
+
 
 
 
@@ -51,17 +77,13 @@ form_ele.addEventListener('submit', e=>{
     
     // })
 
-    const correctAnswers= Array.from(document.querySelectorAll('.correct'))
-    console.log(correctAnswers)
 
-    if(correctAnswers){
-        alertone.classList.add('open')
-    }
-    console.log(alertone)
+
+    // if(correctAnswers.isCorrect){
+    //     alertone.classList.add('open')
+    // }
+    // console.log(alertone)
 
 
     
 })
-
-
-
