@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+
+
+        <div class="correct" >
+            <h1>Thanks for registering in our portal !!</h1>
+            <a href="http://127.0.0.1:5501/form_validation_js/index.html" class="blue-link">Link Text</a>
+
+        </div>
+
+        <div class="incorrect">
+            <ul>
+                <li class="incorrect-message">Username should be less than 10 characters</li>
+                <li class="incorrect-message">Username should not contain special characters</li>
+            </ul>
+        </div>
+        
+
+
+        <form class="form ">
+            <div class="form-child">
+            <label for="username">username</label>
+            <input id="username" type="text" name="username" >
+            </div>
+
+            <div class="form-child">
+                <label for="password">password</label>
+                <input id="password" type="password" name="username" >
+            </div>
+
+
+            <div class="form-child">
+                <label for="password-confirmation">password confirmation</label>
+                <input id="password-confirmation" type="password" name="username-confirmation" >
+            </div>
+
+            <div>
+                <label for="checkbox-id">Agree?</label>
+                <input id="checkbox-id" type="checkbox" name="checkbox-id">
+            </div>
+
+            <button id="button" type="submit">create account?</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
