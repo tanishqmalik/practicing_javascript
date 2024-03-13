@@ -34,6 +34,5 @@ main_form.addEventListener('submit', e=>{
 
 main_form.addEventListener('submit', e=>{
     e.preventDefault();
-
-
+    
 })
